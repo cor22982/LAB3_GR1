@@ -18,7 +18,7 @@ public class Main {
 			switch(option) {
 			case 1:{
 				System.out.println("------Complementos BIANRIOS------");
-				System.out.println("INGRESE EL NUMERO EN BINARIO");
+				System.out.println("INGRESE EL NUMERO EN BINARIO (8 bits)");
 				number = in.nextLine();
 				convertidor.setNumber(number);
 				System.out.println("[1]Complemento A1"+"\n"+"[2]Complemento A2");
@@ -37,7 +37,7 @@ public class Main {
 				System.out.println("[1]Hexadecimal a Decimal"+"\n"+"[2]Decimal a Hexadecimal");
 				option = Integer.parseInt(in.nextLine());
 				if(option ==1){
-					System.out.println("Ingrese el numero en Hexadecimal");
+					System.out.println("Ingrese el numero en Hexadecimal (LETRAS MAYUSCULAS)");
 					number = in.nextLine();
 					System.out.println("\n"+"Hexadecimal: "+ number+"\n"+"Decimal: "+convertidorhexa.HexatoDecimal(number));
 				}
