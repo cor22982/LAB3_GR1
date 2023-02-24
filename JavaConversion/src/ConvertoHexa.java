@@ -37,6 +37,7 @@ public class ConvertoHexa {
 	
 	public String DecimalToHexa(int Number) {
 		String toreturn = "";
+		if((Number>255)&&(Number<=4095)) { //si esta entre el rango
 		ArrayList<Integer> mydata = new ArrayList<Integer>();
 		mydata  = this.Represtantion(Number, mydata);
 		Collections.reverse(mydata);  //aqui invierte el orden
@@ -47,6 +48,10 @@ public class ConvertoHexa {
 			else {
 				toreturn += mydata.get(i);
 			}
+		}}
+		
+		else {
+			toreturn += "No se puede convertir a un Hexadecimal de 3 digitos";
 		}
 		return toreturn;
 	}
